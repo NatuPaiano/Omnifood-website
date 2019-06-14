@@ -1,4 +1,4 @@
-/* Contact
+/* Contact 
 /*---------------------------------------------------- */
 (function($) {
     "use strict";
@@ -28,11 +28,7 @@
                 $("#alertSuccess").remove();
                 if (response.success) {
                     $("#alertSuccess").remove();
-                    if ($("#language").html().substring(0,3) === "ENG"){
-                      mailResult.append(mailSuccessEsp);
-                    } else {
-                      mailResult.append(mailSuccessEng);
-                      }
+                    mailResult.append(mailSuccessEng);
                     $(document.getElementsByName("contact[name]")).val("");
                     $(document.getElementsByName("contact[email]")).val("");
                     $(document.getElementsByName("contact[message]")).val("");
