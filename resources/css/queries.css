@@ -119,7 +119,12 @@
     
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
-    
+
+    .plan-content { margin-left: 30%; }
+    .plan-box div:first-child { text-align: center; }   
+
+    .section-form { margin-left: 30%; }
+    .section-form h2 { margin-right: 20%; } 
 }
 
 @media only screen and (max-width: 480px){
