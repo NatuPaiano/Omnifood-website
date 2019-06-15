@@ -9,11 +9,12 @@
         invalidEmailError = 'Please enter a valid e-mail address',
         subjectError = '>Please enter the subject',
         messageError = 'Your message',
-        mailSuccessEsp = '<div class="alert alert-success fade in" id="alertSuccess">Tu mensaje ha sido enviado. Gracias!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>',
-        mailSuccessEng = '<div class="alert alert-success fade in" id="alertSuccess">Your message has been sent. Thank you!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>',
+        mailSuccessEsp = '<div class="alert alert-success animated fadeIn" id="alertSuccess">Tu mensaje ha sido enviado. Gracias!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>',
+        mailSuccessEng = '<div class="alert alert-success animated fadeIn" id="alertSuccess">Your message has been sent. Thank you!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>',
         mailResult = $('#resultAlert');
-    $('#resultAlert').on('click', '.close', function(){
-        $('#alertSuccess').fadeOut();
+    $('#resultAlert').on('click', '.close', function(e){
+        $('#alertSuccess').addClass('animated fadeOut');
+        e.preventDefault();
       });
     $("#mail_form").submit(function() {
         var form = $(this);
